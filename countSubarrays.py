@@ -16,7 +16,7 @@ class Solution(object):
 # Example usage:
 if __name__ == "__main__":
     nums = [1, 2, 3, 4, 5]
-    k = 2
+    k = 1
     solution = Solution()
     result = solution.countSubarrays(nums, k)
     print(result)
