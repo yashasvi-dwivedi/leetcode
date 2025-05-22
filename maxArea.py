@@ -18,3 +18,9 @@ if __name__ == "__main__":
     solution = Solution()
     heights = [1, 8, 6, 2, 5, 4, 8, 3, 7]
     print(solution.maxArea(heights))  # Output: 49
+    solution = Solution()
+    heights = [1, 1]
+    print(solution.maxArea(heights))  # Output: 1
+    solution = Solution()
+    heights = [2, 2, 2]
+    print(solution.maxArea(heights))  # Output 4
