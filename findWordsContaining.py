@@ -3,7 +3,7 @@ class Solution(object):
         res = []  # Intialize an empty list
 
         for i in range(len(words)):  # Start a loop through length of words
-            a = words[i]  # Assign index of words to a variable
+            a = words[i]  # Assign the words at index i to a variable
             if x in a:
                 res.append(i)  # Check if x appears in a , if it does append it to res
         return res  # Return res
