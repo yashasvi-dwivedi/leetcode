@@ -1,12 +1,12 @@
 class Solution(object):
     def findWordsContaining(self, words, x):
-        res = []
+        res = []  # Intialize an empty list
 
-        for i in range(len(words)):
-            a = words[i]
+        for i in range(len(words)):  # Start a loop through length of words
+            a = words[i]  # Assign index of words to a variable
             if x in a:
-                res.append(i)
-        return res
+                res.append(i)  # Check if x appears in a , if it does append it to res
+        return res  # Return res
 
 
 # Test Cases
