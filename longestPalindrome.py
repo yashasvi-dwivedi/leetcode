@@ -29,13 +29,13 @@ class Solution(object):
 # Test Cases
 if __name__ == "__main__":
     words = ["lc", "cl", "gg"]
-    solution = Solution()
-    result = solution.longestPalindrome(words)
+    s = Solution()
+    result = s.longestPalindrome(words)
     print(result)  # Output: 6
 
     words = ["ab", "ty", "yt", "lc", "cl", "ab"]
-    solution = Solution()
-    result = solution.longestPalindrome(words)
+    s = Solution()
+    result = s.longestPalindrome(words)
     print(result)  # Output: 8
 
     words = ["cc", "ll", "xx"]
