@@ -37,3 +37,8 @@ if __name__ == "__main__":
     solution = Solution()
     result = solution.longestPalindrome(words)
     print(result)  # Output: 8
+
+    words = ["cc", "ll", "xx"]
+    s = Solution()
+    result = s.longestPalindrome(words)
+    print(result)  # Output: 2
