@@ -9,7 +9,9 @@ class Solution(object):
         for u, v in edges:
             adj[u].append(v)
 
-        count = [[0] * 26 for _ in range(n)]  # count[i][c]: max count of color c in any path starting at node i
+        count = [
+            [0] * 26 for _ in range(n)
+        ]  # count[i][c]: max count of color c in any path starting at node i
         vis = [0] * n  # 0: unvisited, 1: visiting, 2: visited
 
         def dfs(node):
