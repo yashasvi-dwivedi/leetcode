@@ -39,3 +39,23 @@ class Solution(object):
         for i in range(n):
             res[i] = (self.evenA if colorA[i] == 0 else self.oddA) + maxiB
         return res
+
+
+# Test Cases
+if __name__ == "__main__":
+    edges1 = [[0, 1], [1, 2], [2, 3]]
+    edges2 = [[0, 1], [1, 2]]
+    solution = Solution()
+    result = solution.maxTargetNodes(edges1, edges2)
+    print("The maximum target nodes for each node in graph A are:", result)
+    # Output: The maximum target nodes for each node in graph A are: [4, 3, 3, 3]
+
+    edges1 = [[0, 1], [1, 2]]
+    edges2 = [[0, 1], [1, 2], [2, 3]]
+    result = solution.maxTargetNodes(edges1, edges2)
+    print("The maximum target nodes for each node in graph A are:", result)
+    # Output: The maximum target nodes for each node in graph A are: [4, 3]
+    edges1 = [[0, 1], [1, 2], [2, 3], [3, 4]]
+    edges2 = [[0, 1], [1, 2], [2, 3]]
+    result = solution.maxTargetNodes(edges1, edges2)
+    print("The maximum target nodes for each node in graph A are:", result)
