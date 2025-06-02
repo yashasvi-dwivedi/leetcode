@@ -11,3 +11,14 @@ class Solution(object):
                 candies[i - 1] = max(candies[i] + 1, candies[i - 1])
             cnt += candies[i - 1]
         return cnt + candies[n - 1]
+
+
+# Test cases
+if __name__ == "__main__":
+    sol = Solution()
+    print(sol.candy([1, 0, 2]))  # Output: 5
+    print(sol.candy([1, 2, 2]))  # Output: 4
+    print(sol.candy([1, 3, 2, 2, 1]))  # Output: 9
+    print(sol.candy([1, 2, 3, 4, 5]))  # Output: 15
+    print(sol.candy([5, 4, 3, 2, 1]))  # Output: 15
+    print(sol.candy([1, 2, 3, 2, 1]))  # Output: 7
