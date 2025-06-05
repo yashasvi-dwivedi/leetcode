@@ -34,3 +34,21 @@ class Solution:
             root = self.find(idx)
             ans.append(chr(root + ord("a")))
         return "".join(ans)
+
+
+# Test Cases
+if __name__ == "__main__":
+    solution = Solution()
+    print(
+        solution.smallestEquivalentString("parker", "morris", "parser")
+    )  # Expected: "makkek"
+    print(
+        solution.smallestEquivalentString("hello", "world", "hold")
+    )  # Expected: "hdld"
+    print(
+        solution.smallestEquivalentString("leetcode", "programs", "sourcecode")
+    )  # Expected: "aauaaaaa"
+    print(
+        solution.smallestEquivalentString("abc", "xyz", "abcxyz")
+    )  # Expected: "abcxyz"
+    print(solution.smallestEquivalentString("a", "b", "c"))  # Expected: "c"
