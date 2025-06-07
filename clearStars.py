@@ -26,3 +26,4 @@ class Solution(object):
 if __name__ == "__main__":
     solution = Solution()
     print(solution.clearStars("aaba*"))
+    print(solution.clearStars("abc"))
