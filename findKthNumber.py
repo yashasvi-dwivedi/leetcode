@@ -22,3 +22,11 @@ class Solution(object):
         return (neighbour - current) + self.numOfChildren(
             current * 10, neighbour * 10, n
         )
+
+
+if __name__ == "__main__":
+    sol = Solution()
+    print(sol.findKthNumber(13, 2))  # Output: 10
+    print(sol.findKthNumber(1, 1))  # Output: 1
+    print(sol.findKthNumber(100, 10))  # Output: 17
+    print(sol.findKthNumber(1000, 100))  # Output: 192
