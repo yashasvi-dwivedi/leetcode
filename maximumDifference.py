@@ -18,7 +18,6 @@ class Solution(object):
 
 
 # Test cases
-
 if __name__ == "__main__":
     solution = Solution()
     print(solution.maximumDifference([1, 2, 3, 4, 5]))  # Output: 4
