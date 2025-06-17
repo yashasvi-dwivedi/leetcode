@@ -37,3 +37,13 @@ class Solution(object):
         choose = self.nCr(n - 1, runs - 1, fact, inv_fact)
         pow_part = self.mod_pow(m - 1, runs - 1)
         return choose * m % self.MOD * pow_part % self.MOD
+
+
+# Test cases
+if __name__ == "__main__":
+    solution = Solution()
+    print(solution.countGoodArrays(5, 3, 2))  # Example output
+    print(solution.countGoodArrays(10, 100, 5))  # Example output
+    print(solution.countGoodArrays(7, 2, 3))  # Example output
+    print(solution.countGoodArrays(1, 1, 0))  # Example output
+    print(solution.countGoodArrays(1000, 1000, 500))  # Example output
