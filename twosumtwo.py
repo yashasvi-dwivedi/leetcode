@@ -19,3 +19,8 @@ if __name__ == "__main__":
     target = 9
     result = solution.twoSum(numbers, target)
     print(result)  # Expected output: [1, 2]
+    solution = Solution()
+    numbers = [3, 2, 4]
+    target = 6
+    result = solution.twoSum(numbers, target)
+    print(result)  # Expected output: [2, 3]
