@@ -17,3 +17,11 @@ if __name__ == "__main__":
     s = "NSEW"
     k = 2
     print(sol.maxDistance(s, k))  # Output: 4
+    sol = Solution()
+    s = "NNNN"
+    k = 1
+    print(sol.maxDistance(s, k))  # Output: 3
+    sol = Solution()
+    s = "NNNN"
+    k = 2
+    print(sol.maxDistance(s, k))  # Output: 4
