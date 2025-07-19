@@ -17,10 +17,6 @@ class Solution:
 # Test cases
 if __name__ == "__main__":
     solution = Solution()
-    print(
-        solution.removeSubfolders(["/a", "/a/b", "/c/d", "/c/d/e"])
-    )  # Example test case
-    print(solution.removeSubfolders(["/a/b/c", "/a/b/d", "/a/b/c/d"]))  # Nested folders
-    print(
-        solution.removeSubfolders(["/x/y/z", "/x/y/z/a", "/x/y"])
-    )  # Non-nested folders
+    print(solution.removeSubfolders(["/a", "/a/b", "/c/d", "/c/d/e"]))
+    print(solution.removeSubfolders(["/a/b/c", "/a/b/d", "/a/b/c/d"]))
+    print(solution.removeSubfolders(["/x/y/z", "/x/y/z/a", "/x/y"]))
