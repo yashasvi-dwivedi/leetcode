@@ -14,18 +14,21 @@ class Solution(object):
             leftRoot is not None and rightRoot is None
         ):
             return False
+        if leftRoot.val != rightRoot.val:
+            return False
         return self.isTreeSymmetric(
             leftRoot.left, rightRoot.right
         ) and self.isTreeSymmetric(leftRoot.right, rightRoot.left)
 
     def isSymmetric(self, root):
+        if not root:
+            return True
         return self.isTreeSymmetric(root.left, root.right)
 
 
 # Test cases
 if __name__ == "__main__":
-    # Example usage:
-    # Constructing a symmetric tree
+    # Symmetric tree
     root = TreeNode(1)
     root.left = TreeNode(2)
     root.right = TreeNode(2)
@@ -37,10 +40,16 @@ if __name__ == "__main__":
     solution = Solution()
     print(solution.isSymmetric(root))  # Output: True
 
-    # Constructing a non-symmetric tree
+    # Non-symmetric tree
     root2 = TreeNode(1)
     root2.left = TreeNode(2)
     root2.right = TreeNode(2)
     root2.left.right = TreeNode(3)
 
     print(solution.isSymmetric(root2))  # Output: False
+
+    # Non-symmetric tree: [1,2,3]
+    root3 = TreeNode(1)
+    root3.left = TreeNode(2)
+    root3.right = TreeNode(3)
+    print(solution.isSymmetric(root3))  # Output: False
