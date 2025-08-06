@@ -19,4 +19,6 @@ class Solution:
 # Test cases
 if __name__ == "__main__":
     s = Solution()
-    print(f"s.numOfUnplacedFruits ")
+    print(
+        f"s.numOfUnplacedFruits([1, 2, 3], [2, 3]) = {s.numOfUnplacedFruits([1, 2, 3], [2, 3])}"
+    )
