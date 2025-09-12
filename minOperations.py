@@ -1,3 +1,5 @@
+from typing import List
+
 class Solution:
     def minOperations(self, queries: List[List[int]]) -> int:
         expSum4 = [1] + [0] * 17
